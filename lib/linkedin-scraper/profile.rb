@@ -142,6 +142,12 @@ module Linkedin
       ATTRIBUTES.reduce({}){ |hash,attr| hash[attr.to_sym] = self.send(attr.to_sym);hash }.to_json
     end
 
+    def to_hash
+      require 'json'
+      ATTRIBUTES.reduce({}){ |hash,attr| hash[attr.to_sym] = self.send(attr.to_sym);hash }
+    end
+
+
 
     private
 

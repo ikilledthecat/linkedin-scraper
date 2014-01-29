@@ -146,11 +146,6 @@ module Linkedin
       ATTRIBUTES.reduce({}){ |hash,attr| hash[attr.to_sym] = self.send(attr.to_sym);hash }
     end
 
-    def create_hash
-
-    end
-
-
     private
 
     def get_companies(type)

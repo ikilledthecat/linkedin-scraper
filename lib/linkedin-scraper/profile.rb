@@ -66,7 +66,7 @@ module Linkedin
     end
 
     def companies
-      current_companies.collect{|x| x[:current_company]} + past_companies.collect{|x| x[:past_company]}
+      current_companies.collect{|x| x[:company]} + past_companies.collect{|x| x[:company]}
     end
 
     def current_companies
